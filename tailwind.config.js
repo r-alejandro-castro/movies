@@ -14,6 +14,10 @@ export default {
       '4xl': '2.441rem',
       '5xl': '3.052rem',
     },
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+      sans: ['Inter', 'sans-serif'],
+    },
     extend: {
       fontFamily: {
       roboto: ['Roboto', 'sans-serif'],

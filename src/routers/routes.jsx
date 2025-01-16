@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from '../pages/LandingPage.jsx'
 
 function MyRoutes() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* Agrega más rutas según sea necesario */}
+        <Route path='/' element={<LandingPage />} />
       </Routes>
     </Router>
   );

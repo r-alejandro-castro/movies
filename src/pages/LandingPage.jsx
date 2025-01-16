@@ -1,4 +1,4 @@
-import {ContextMovieCard} from '../components/ContextMovieCard.jsx'
+import ContextMovieCard from '../components/ContextMovieCard.jsx';
 
 export default function LandingPage() {
   return (

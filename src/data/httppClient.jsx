@@ -1,12 +1,12 @@
-const API_URL = 'https://api.themoviedb.org/3/'
+const API = 'https://api.themoviedb.org/3';
 
 export function get(path) {
-    return fetch(API_URL + path.{
+    return fetch(API + path, {
         headers: {
             Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxM2Q3NmExNTdhMmQ0MWFhYTczMjM5NzIwMTc3NTExZSIsIm5iZiI6MTczNDcwMDIxMS4zNjIsInN1YiI6IjY3NjU2Y2IzODdiOTJhNDNiZTVkZWZhYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.1g1l7Zvdyifn1Zh543r2ra4R_KwWtSqSkTm6ld621So',
             'Content-Type': 'application/json;charset=utf-8'
         }
-    }).then((result)=>result.json())
+    }).then((result) => result.json());
 }
 
 // export const getMovies = async (query) => {

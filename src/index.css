@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
+html, body {@apply 
+  h-full
+  min-h-screen
+  font-poppins
+  text-white
+  font-bold
+  bg-black
+}
+
+h1,h2, h3, h4 {@apply 
+  font-poppins
+  text-base 
+  font-bold;
+  box-sizing: border-box; 
 }
