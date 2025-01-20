@@ -8,11 +8,13 @@ export default function ContextMovieCard() {
   // useEffect(() => {
   //   get('/discover/movies').then((data) => {
   //     setMovies(data.results);
+  //     console.log(data)
   //   });
   // }, []);
 
   useEffect(() => {
     get('/discover/movie').then((data) => {
+      console.log('Fetched data:', data);
       setMovies(data.results || []); 
     }).catch((error) => {
       console.error('Error fetching movies:', error);
@@ -23,9 +25,11 @@ export default function ContextMovieCard() {
   return (
     <div>
       {movies.length > 0 ? (
-        movies.map((movie) => (
+        <ul className='grid grid-cols-[repeat(auto-fill,_minmax(230px,_1fr))] gap-10 p-10 justify-items-center'>
+        {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
-        ))
+        ))}
+      </ul>
       ) : (
         <p>No movies found</p>
       )}

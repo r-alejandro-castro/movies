@@ -10,7 +10,7 @@ function App() {
     // </div>
     <div>
       <header>
-        <h1 className='text-center'>
+        <h1 className='text-center mt-6'>
           Movies
         </h1>
       </header>
